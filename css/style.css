@@ -24,12 +24,10 @@ a{
 
 h1, h2{
   line-height: 1.2;
-  font-weight: 800;
 }
 
 p{
   margin: 10px 0;
-  font-weight: 600;
 }
 
 img{
@@ -41,9 +39,8 @@ img{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(0, 0, 15);
+  background-color: rgba(15, 15, 32, 0.9);
   color: navajowhite;
-  opacity: 0.95;
   width: 100%;
   height: 70px; 
   position: fixed;
@@ -105,4 +102,22 @@ img{
 
 .hero *{
   z-index: 2;
+}
+
+/* Icons */
+.icons{
+  padding: 30px;
+}
+
+.icons h3{
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.icons i{
+  background-color: #612c2c;
+  color: white;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 15px;
 }
