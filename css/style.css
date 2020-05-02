@@ -62,6 +62,17 @@ img{
   display: flex;
 }
 
+/* Covid Alert */
+.potato{
+  width: 100%;
+  background: #612c2c;
+  color: navajowhite;
+  top: 70px;
+  position: fixed;
+  padding: 10px;
+  text-align: center;
+}
+
 /* Header */
 .hero{
   background: url('/img/image1.JPG') no-repeat center center/cover;
