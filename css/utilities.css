@@ -24,6 +24,11 @@
 }
 
 .btn-secondary, .bg-secondary{
+  background: var(--primary-color);
+  color: white;
+}
+
+.btn-secondary, .bg-tertiary{
   background: #0284d0;
   color: white;
 }
@@ -58,6 +63,10 @@
 }
 
 /* Flex Columns */
+.flex-columns.flex-reverse .row{
+  flex-direction: row-reverse;
+}
+
 .flex-columns .row{
   display: flex;
   flex-wrap: wrap;
@@ -105,7 +114,7 @@
 
 /* Section Header */
 .section-header{
-  padding: 30px;
+  padding: 0px 10px 30px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
