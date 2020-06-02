@@ -26,7 +26,6 @@ h1, h2{
 }
 
 p{
-  color: var(--primary-color)
   margin: 10px 0;
 }
 
@@ -42,10 +41,11 @@ img{
   background-color: var(--secondary-color);
   color: var(--primary-color);
   width: 100%;
-  height: 70px; 
+  height: var(--navbar-height);
   position: fixed;
   top: 0px;
   padding: 0 30px; 
+  border-bottom: 1px solid var(--primary-color);
 }
 
 .navbar a{
@@ -67,10 +67,13 @@ img{
   width: 100%;
   background: var(--primary-color);
   color: var(--secondary-color);
-  top: 70px;
+  top: var(--navbar-height);
   position: fixed;
-  padding: 10px;
-  text-align: center;
+  height: var(--covid-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
 }
 
 /* Header */
@@ -157,10 +160,19 @@ img{
   opacity: 0.7;
 }
 
+/* About Page Properties */
+#about{
+  position: relative;
+  top: calc(var(--navbar-height) + var(--covid-height));
+}
+
 /* Table Container Properties */
 .schedule{
-  position: relative;
-  padding: 20px;
+  position: absolute;
+  top: var(--navbar-height);
+  height: calc(100vh - var(--navbar-height));
+  width: 100vw;
+  padding: 80px 20px;
 }
 
 /* Background Image */
@@ -178,10 +190,6 @@ img{
 }
 
 /* Schedule Area Properties */
-.schedule{
-  padding-top: 36px;
-  padding-bottom: 60px;
-}
 .schedule h1{
   margin-bottom: 42px;
   font-size: 42px;
@@ -222,19 +230,17 @@ img{
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  height: 60px;
+  height: 40px;
   padding: 10px 20px;
-  border-top: 1px solid var(--primary-color);
 }
 
-.footer a{
-  color: white;
+.testimonials{
+  background: orange;
+  padding: 40px;
 }
 
-.footer a:hover{
-  color: #28a745;
-}
-
-.footer .social > *{
-  margin: 0px 20px;
+/* About Page */
+.about-container{
+  position: relative;
+  top: 110px;
 }
