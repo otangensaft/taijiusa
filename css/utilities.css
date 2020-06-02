@@ -1,6 +1,6 @@
 :root{
   --primary-color: #101020;
-  --maroon: #612c2c;
+  --secondary-color: #cfe3ec;
   --light-text-color: navajowhite;
 }
 
@@ -9,8 +9,9 @@
   cursor: pointer;
   display: inline-block;
   padding: 10px 30px;
-  color: navajowhite;
-  background-color: var(--primary-color);
+  color: black;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
   border-radius: 5px;
 }
 
@@ -19,8 +20,10 @@
 }
 
 .btn-primary, .bg-primary{
-  background: #612c2c;
-  color: white;
+  background: var(--secondary-color);
+  color: black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .btn-secondary, .bg-secondary{
@@ -45,8 +48,7 @@
 
 .btn-outline{
   background: transparent;
-  color: white;
-  border: 1px solid white;
+  border: 1px solid black;
 }
 
 /* Flex Items */
