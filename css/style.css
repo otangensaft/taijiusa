@@ -9,7 +9,6 @@
 body{
   font-family: 'Open-Sans', sans-serif;
   background: #fff;
-  color: #333;
   line-height: 1.6;
 }
 
@@ -27,6 +26,7 @@ h1, h2{
 }
 
 p{
+  color: var(--primary-color)
   margin: 10px 0;
 }
 
@@ -39,8 +39,8 @@ img{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(15, 15, 32, 0.9);
-  color: navajowhite;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   width: 100%;
   height: 70px; 
   position: fixed;
@@ -49,14 +49,13 @@ img{
 }
 
 .navbar a{
-  color: navajowhite;
+  color: var(--primary-color);
   padding: 10px 20px;
   margin: 0 5px;
 }
 
 .navbar a:hover{
-  border-bottom: navajowhite 2px solid;
-
+  border-bottom: var(--primary-color) 2px solid;
 }
 
 .navbar ul{
@@ -66,8 +65,8 @@ img{
 /* Covid Alert */
 .covid19{
   width: 100%;
-  background: #612c2c;
-  color: navajowhite;
+  background: var(--primary-color);
+  color: var(--secondary-color);
   top: 70px;
   position: fixed;
   padding: 10px;
@@ -93,6 +92,7 @@ img{
 
 .hero .content h1{
   font-size: 42px;
+  text-shadow: 2px 2px 2px black;
 }
 
 .hero .content p{
@@ -100,6 +100,7 @@ img{
   max-width: 720px;
   margin: 20px 0 30px;
   font-weight: 600;
+  text-shadow: 2px 2px 2px black;
 }
 
 .hero::before{
@@ -117,10 +118,10 @@ img{
 .hero::after{
   content: '';
   position: absolute;
-  top: 30vh;
+  top: 35vh;
   left: 0;
   width: 100%;
-  height: 40vh;
+  height: 30vh;
   background: rgb(31, 29, 29);
   opacity: 0.5;
   z-index: -1;
@@ -139,6 +140,7 @@ img{
 .icons h3{
   font-weight: bold;
   margin-bottom: 15px;
+  color: var(--primary-color);
 }
 
 .icons i{
