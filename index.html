@@ -12,6 +12,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
     integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
     crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.css" />
   <title>Chen Style Taiji by Wei Tang</title>
 </head>
@@ -208,9 +214,56 @@
     </div>
   </section>
 
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="p-4 bg-dark text-white">
+    <div class="container">
+      <h2 class="text-center">Testimonials</h2>
+      <div class="row text-center">
+        <div class="col">
+          <div class="slider">
+            <div>
+              <blockquote class="blockquote">
+                <p class="mb-0">
+                  I really have come to appreciate the value of Taiji. Like any exercise, the trainer's ability is
+                  integral
+                  to the success of the students, and I can recommend Mr. Tang without any reservations.
+                </p>
+                <footer class="blockquote-footer">Karen Gaio Hansberger, M.D.
+                </footer>
+              </blockquote>
+            </div>
+            <div>
+              <blockquote class="blockquote">
+                <p class="mb-0">
+                  All people who do taiji with us are very friendly and happy. So, in that regard, we have Master Tang
+                  to thank for bringing us together.
+                </p>
+                <footer class="blockquote-footer">Sharon Yawill
+                </footer>
+              </blockquote>
+            </div>
+            <div>
+              <blockquote class="blockquote">
+                <p class="mb-0">
+                  We have grown to really respect and admire our Master Tang and feel so lucky to have him as our
+                  instructor. When we watch he to perform, we feel totally mesmerized and speechless.
+                </p>
+                <footer class="blockquote-footer">Leila Ayoub from
+                  <cite title="Company 3">Olive and Citrus</cite>
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <!-- Footer -->
   <footer class="footer">
-    <p>Copyright &copy; 2020 - TaijiUSA</p>
+    <p>&copy; 2020 - TaijiUSA</p>
     <p><i class="fas fa-phone mb-2"></i>&nbsp (909)-556-2569 </p>
   </footer>
 
@@ -226,6 +279,9 @@
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
     integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
     crossorigin="anonymous"></script>
 
   <script>
@@ -243,6 +299,13 @@
       event.preventDefault();
       $(this).ekkoLightbox();
     });
+
+    $('.slider').slick({
+      infinite: true,
+      slideToShow: 1,
+      slideToScroll: 1
+    })
+
   </script>
 </body>
 
