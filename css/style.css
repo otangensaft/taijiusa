@@ -1,246 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap');
-
-*{
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+:root{
+  --primary-color: rgb(15, 43, 68);
 }
 
-body{
-  font-family: 'Open-Sans', sans-serif;
-  background: #fff;
-  line-height: 1.6;
+.navbar-color{
+  background-color: var(--primary-color);
 }
 
-ul{
-  list-style: none;
+.navbar .nav-link{
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
 }
 
-a{
-  color: #333;
-  text-decoration: none;
+.navbar .nav-item.active{
+  border-left: #444 3px solid;
 }
 
-h1, h2{
-  line-height: 1.2;
+.carousel-item {
+  height: 450px;
 }
 
-p{
-  margin: 10px 0;
+.carousel-image-1{
+  background: url('../img/img1.JPG');
+  background-size: cover;
 }
 
-img{
-  width: 100%;
+.carousel-image-2{
+  background: url('../img/img2.JPG');
+  background-size: cover;
 }
 
-/* Navbar */
-.navbar{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  width: 100%;
-  height: var(--navbar-height);
-  position: fixed;
-  top: 0px;
-  padding: 0 30px; 
-  border-bottom: 1px solid var(--primary-color);
+.carousel-image-3{
+  background: url('../img/img3.JPG');
+  background-size: cover;
 }
 
-.navbar a{
-  color: var(--primary-color);
-  padding: 10px 20px;
-  margin: 0 5px;
+.display-3{
+  padding: 0.5rem;
+  font-weight: 300;
+  background-color: rgba(15, 43, 68, 0.9);
 }
 
-.navbar a:hover{
-  border-bottom: var(--primary-color) 2px solid;
+.lead{
+  padding: 0.75rem;
+  background-color: rgba(15, 43, 68, 0.9);
 }
 
-.navbar ul{
-  display: flex;
+.btn-primary{
+  background-color: var(--primary-color);
+  border: 0.5px solid white;
 }
 
-/* Covid Alert */
-.covid19{
-  width: 100%;
-  background: var(--primary-color);
-  color: var(--secondary-color);
-  top: var(--navbar-height);
-  position: fixed;
-  height: var(--covid-height);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 20px;
-}
-
-/* Header */
-.hero{
-  height: 100vh;
+#home-heading{
   position: relative;
-}
-
-.hero .content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  min-height: 200px;
+  background: url(../img/img7.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
-  height: 100%;
-  padding: 0 20px;
-  color: var(--secondary-color);
+  color: #ccc;
+  overflow-x: hidden;
 }
 
-.hero .content h1{
-  font-size: 42px;
-  text-shadow: 2px 2px 2px black;
-}
-
-.hero .content p{
-  font-size: 28px; 
-  max-width: 720px;
-  margin: 20px 0 30px;
-  font-weight: 600;
-  text-shadow: 2px 2px 2px black;
-}
-
-.hero::before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('/img/image1.JPG') no-repeat center center/cover;
-  opacity: 1;
-  z-index: -1;
-}
-
-.hero::after{
-  content: '';
-  position: absolute;
-  top: 35vh;
-  left: 0;
-  width: 100%;
-  height: 30vh;
-  background: rgb(31, 29, 29);
-  opacity: 0.5;
-  z-index: -1;
-}
-
-.hero .navbar,
-.hero .covid19{
-  z-index: 1;
-}
-
-/* Icons */
-.icons{
-  padding: 30px;
-}
-
-.icons h3{
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: var(--primary-color);
-}
-
-.icons i{
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  padding: 1rem;
-  border-radius: 50%;
-  margin-bottom: 15px;
-  border: 1px solid var(--primary-color);
-}
-
-/* Gallery */
-.gallery img:hover{
-  opacity: 0.7;
-}
-
-/* About Page Properties */
-#about{
+#home-heading-2{
   position: relative;
-  top: calc(var(--navbar-height) + var(--covid-height));
+  min-height: 200px;
+  background: url(../img/img6.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #ccc;
+  overflow-x: hidden;
 }
 
-/* Table Container Properties */
-.schedule{
-  position: absolute;
-  top: var(--navbar-height);
-  height: calc(100vh - var(--navbar-height));
-  width: 100vw;
-  padding: 80px 20px;
+#home-heading-3{
+  position: relative;
+  min-height: 160px;
+  background: url(../img/img13.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #ccc;
+  overflow-x: hidden;
 }
 
-/* Background Image */
-.schedule::before{
-  content: '';
-  width: 100vw;
-  height: 100%;
-  max-width: 100%;
+.dark-overlay{
   position: absolute;
   top: 0;
   left: 0;
-  background: url('/img/gallery/img10.jpg') no-repeat center center/cover;
-  opacity: 0.8;
-  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
 }
 
-/* Schedule Area Properties */
-.schedule h1{
-  margin-bottom: 42px;
-  font-size: 42px;
-  color: var(--primary-color);
-}
-
-/* Table Properties */
-.schedule table{
-  margin: auto;
-  border-collapse: collapse;
-  background: rgba(255, 222, 173, 0.836);
-  color: var(--primary-color);
-}
-
-.schedule table tr th, 
-.schedule table tr td{
-  border: 1px solid var(--primary-color);
-  padding: 10px;
-  max-width: 240px;
-}
-
-.schedule table tr th{
-  font-size: 1.2rem;
-}
-
-.schedule table tr td{
-  vertical-align: top;
-}
-
-.schedule table tr td .title, 
-.schedule table tr td .time{
-  font-weight: bold;
-}
-
-/* Footer */
 .footer{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  text-align: center;
+  color: white;
+  background-color: var(--primary-color);
+  text-align: left;
+  line-height: 40px;
   height: 40px;
-  padding: 10px 20px;
+  padding: 0px 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.testimonials{
-  background: orange;
-  padding: 40px;
+/* Page Header */
+#page-header{
+  min-height: 200px;
+  background: url(../img/img12.jpg);
+  background-position: 0 -180px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  border-bottom: 1px #eee solid;
+  padding-top: 50px;
 }
 
-/* About Page */
-.about-container{
-  position: relative;
-  top: 110px;
+.about-img{
+  margin-top: -50px;
 }

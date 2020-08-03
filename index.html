@@ -1,139 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Links -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/utilities.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Chen Style Taiji</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+    integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Chen Style Taiji by Wei Tang</title>
 </head>
-<body id="home">
-  <header class="hero">
-    <div id="navbar" class="navbar">
-      <h1 class="logo">
-        Chen Style Taiji 
-      </h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="schedule.html">Class Schedule</a></li>
-          <li><a href="rates.html">Rates</a></li>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark navbar-color">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Chen Style Taiji</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="schedule.html" class="nav-link">Schedule and Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
         </ul>
-      </nav>
+      </div>
     </div>
 
-    <div class="covid19">
-      <h4> Alert: Classes Have Been Suspended Until Further Notice Due to COVID-19 &nbsp<i class="fas fa-virus"></i></h4>
-      <h4><i class="fas fa-phone fa-sm"></i>&nbsp (909) 556 2569 </h4>
-    </div>
+  </nav>
 
-    <div class="content">
-      <h1>Chen Style Taiji</h1>
-      <p>Empowering Individuals to Find Their Inner Strength</p>
-      <a href="#history" class="btn">Read More</a>
-    </div>
-  </header>
+  <!-- Showcase Slider -->
+  <section id="showcase">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"> </li>
+        <li data-target="#myCarousel" data-slide-to="1"> </li>
+        <li data-target="#myCarousel" data-slide-to="2"> </li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item carousel-image-1 active">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block text-right mb-5">
+              <h1 class="display-3">Health and Wellness</h1>
+              <p class="lead">Taiji is attributed to producing numerous health benefits. The fluid movements of the
+                activity encourage joint health and overall physical well being</p>
+              <a href="about.html" class="btn btn-primary btn-lg">Read More</a>
+            </div>
+          </div>
+        </div>
 
-  <main>
-    <!-- About Icons -->
-    <section class="icons bg-light">
-      <div class="flex-items">
-        <div>
-          <i class="fas fa-heart fa-2x"></i>
-          <div>
+        <div class="carousel-item carousel-image-2">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block mb-5">
+              <h1 class="display-3">Community</h1>
+              <p class="lead">Come practice taiji with others, and participate in a community of people who love the art
+                of the performance.</p>
+              <a href="about.html" class="btn btn-primary btn-lg">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item carousel-image-3">
+          <div class="container">
+            <div class="carousel-caption d-none d-sm-block text-left mb-5">
+              <h1 class="display-3"> Fitness and Exercise</h1>
+              <p class="lead">Light exercise in the mornings well get you going on your day with a positive attitude and
+                an abundance of energy</p>
+              <a href="about.html" class="btn btn-primary btn-lg">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+
+      <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Home Icon Section -->
+  <section id="home-icons" class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4 text-center">
+          <i class="fas fa-heart fa-3x mb-2"></i>
           <h3>Health</h3>
-          <p>Numerous studies point to the long term health benefits of Tai Chi</p>
-          </div>
         </div>
-        <div>
-          <i class="fas fa-users fa-2x"></i>
-          <div>
+        <div class="col-md-4 mb-4 text-center">
+          <i class="fas fa-users fa-3x mb-2"></i>
           <h3>Community</h3>
-          <p>More than just physical benefits, group activities also bring many social benefits as well.</p>
-          </div>
         </div>
-        <div>
-          <i class="fas fa-balance-scale fa-2x"></i>
-          <div>
-          <h3>Balance</h3>
-          <p>Tai Chi is all about balance, both during  exercise and afterwards.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- History -->
-    <section id="history" class="solutions flex-columns">
-      <div class="row">
-        <div class="column">
-          <div class="column-1">
-            <img src="img/image2.jpg" alt="">
-          </div>
-        </div>
-        <div class="column">
-          <div class="column-2 bg-primary">
-            <h4>What you're looking for</h4>
-            <h2>History of Tai Chi</h2>
-            <p>Tai Chi is an enjoyable exercise which provides numerous physical and emotional benefits.  It has been practiced close to a thousand years in China, and has more recently garnered a growing following in the United States.</p>
-            <a href="#profile" class="btn btn-outline">
-              <i class="fas"></i>
-              Read More
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Gallery -->
-    <section id="gallery" class="gallery cases flex-grid section-padding">
-      <header class="section-header">
-        <h2>Gallery</h2>
-        <h4>Come See Us in Person!</h4>
-      </header>
-      <div class="row">
-        <div class="column">
-          <img src="img/gallery/image1.JPG" alt="">
-          <img src="img/gallery/image7.jpg" alt="">
-        </div>
-        <div class="column">
-          <img src="img/gallery/image3.jpg" alt="">
-          <img src="img/gallery/image4.png" alt="">
-        </div>
-        <div class="column">
-          <img src="img/gallery/image5.JPG" alt="">
-          <img src="img/gallery/image2.JPG" alt="">
-        </div>
-        <div class="column">
-          <img src="img/gallery/image6.jpg" alt="">
-          <img src="img/gallery/image8.JPG" alt="">
-        </div>
-      </div>
-    </section>  
-  </main>
-
-  <!-- Profile -->
-  <section id="profile" class="profile flex-columns flex-reverse">
-    <div class="row">
-      <div class="column">
-        <div class="column-1">
-          <img src="img/gallery/img9.JPG" alt="">
-        </div>
-      </div>
-      <div class="column">
-        <div class="column-2 bg-primary">
-          <h4>About the Instructor</h4>
-          <h2>Wei Tang</h2>
-          <p>Master Tang received his Tai Chi training in China under the guidance of Master Xie.  He has experience with private as well as group instruction, and teaches several forms of Tai Chi, with some of the most popular forms involving Sword-Style and Fan-Style. He began teaching students in California in 2014 and has taught more than one hundred students.</p>
+        <div class="col-md-4 mb-4 text-center">
+          <i class="fas fa-walking fa-3x mb-2"></i>
+          <h3>Fitness</h3>
         </div>
       </div>
     </div>
   </section>
 
-  <footer class="footer bg-secondary">
+  <!-- Home Heading Section -->
+  <section id="home-heading" class="p-5">
+    <div class="dark-overlay">
+      <div class="row">
+        <div class="col">
+          <div class="container pt-5">
+            <h1>Are Your Ready To Get Started?</h1>
+            <p class="d-none d-md-block">Getting started is easy, check the schedule for drop in times!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <section id="info" class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 align-self-center">
+          <h3>Come Join Us</h3>
+          <p>The hardest part of joining is getting off your couch! Group lessons are free for your first session.
+            There's no commitment, but you'll have so much fun that you'll want to keep coming.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="./img/img7.jpg" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Home Heading 2 Section -->
+  <section id="home-heading-2" class="p-5">
+    <div class="dark-overlay">
+      <div class="row">
+        <div class="col">
+          <div class="container pt-5">
+            <h1>Large Variety of Classes</h1>
+            <p class="d-none d-md-block">There are plenty of different forms to practice, from fan style to sword style,
+              there's something for everyone!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery -->
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <h1 class="text-center">Photo Gallery</h1>
+      <p class="text-center">Come See Us In Person</p>
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <a href="./img/img4.JPG" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+            <img src="./img/img4.JPG" alt="" class="img-fluid">
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="./img/img11.JPG" data-toggle="lightbox" data-gallery="img-gallery" data-height="560"
+            data-width="560">
+            <img src="./img/img11.JPG" alt="" class="img-fluid">
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="./img/img6.JPG" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+            <img src="./img/img6.JPG" alt="" class="img-fluid">
+          </a>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <a href="./img/img8.JPG" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+            <img src="./img/img8.JPG" alt="" class="img-fluid">
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="./img/img9.JPG" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+            <img src="./img/img9.JPG" alt="" class="img-fluid">
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="./img/img5.png" data-toggle="lightbox" data-gallery="img-gallery" data-height="560" data-width="560">
+            <img src="./img/img5.png" alt="" class="img-fluid">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
     <p>Copyright &copy; 2020 - TaijiUSA</p>
+    <p><i class="fas fa-phone mb-2"></i>&nbsp (909)-556-2569 </p>
   </footer>
+
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
+    integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g=="
+    crossorigin="anonymous"></script>
+
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+    // Configure Slider
+    $('.carousel').carousel({
+      interval: 6000,
+      pause: 'hover'
+    })
+
+    // Lightbox Init
+    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
+  </script>
 </body>
+
 </html>

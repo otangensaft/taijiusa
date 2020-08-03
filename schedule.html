@@ -1,103 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Links -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/utilities.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Chen Style Taiji</title>
-</head>
-<body>
-  <div id="navbar" class="navbar">
-    <h1 class="logo">
-      Chen Style Taiji 
-    </h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="schedule.html">Class Schedule</a></li>
-        <li><a href="rates.html">Rates</a></li>
-      </ul>
-    </nav>
-  </div>
-  <div class="covid19">
-    <h4><span><i class="fas fa-virus"></i></span> &nbsp Alert: Classes Have Been Suspended Until Further Notice Due to COVID-19</h4>
-  </div>
 
-  <section>
-    <div class="schedule">
-      <h1>Weekly Schedule</h1>
-      <table>
-        <tr>
-          <th>Monday</th>
-          <th>Tuesday</th>
-          <th>Wednesday</th>
-          <th>Thursday</th>
-          <th>Friday</th>
-          <th>Saturday</th>
-        </tr>
-        <tr>
-          <!-- Monday -->
-          <td>
-              <p class="time">8:00am - 8:45am</p>
-              <p class="title">Beginner</p>
-              <p class="details">Balance Art, Fan Style, Sword Style, or 47 Forms</p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Chen Style Taiji by Wei Tang</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark navbar-color">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">Chen Style Taiji</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item active">
+            <a href="schedule.html" class="nav-link">Schedule and Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header id="page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 m-auto text-left">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Class Schedule -->
+  <section id="services" class="py-5">
+    <h1 class="text-center">Schedule</h1>
+    <div class="container">
+      <div class="row my-4">
+        <!-- Monday -->
+        <div class="col-md-4 mb-5">
+          <div class="card text-center">
+            <div class="card-header bg-dark text-white">
+              <h3>Monday</h3>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">8:00 AM | 45 min. </h4>
+              <p class="card-text">Beginner Group Class</p>
+              <ul class="list-group">
+                <li class="list-group-item">Balance Art</li>
+                <li class="list-group-item">Fan and Sword</li>
+                <li class="list-group-item">47 Forms</li>
+              </ul>
               <br>
-              <p class="time">8:45am - 9:15am</p>
-              <p class="title">Private Lesson</p>
-              <p class="details">Personal Instruction</p>
-          </td>
-          <!-- Tuesday -->
-          <td>
-              <p class="time">8:00am - 8:45am</p>
-              <p class="title">Advanced I</p>
-              <p class="details">Balance Art, Fan Style Sword Style, 47 Forms, Push Hands</p>
-          </td>
-          <!-- Wednesday -->
-          <td>
-            <p class="time">8:00am - 8:45am</p>
-            <p class="title">Beginner</p>
-            <p class="details">Balance Art, Fan Style, Sword Style, or 47 Forms</p>
+              <h4 class="card-title">8:45 AM | 30 min.</h4>
+              <p class="card-text">Private Lesson</p>
+              <ul class="list-group">
+                <li class="list-group-item">Personalized Lessons</li>
+                <li class="list-group-item">1-on-1 Instruction</li>
+              </ul>
+            </div>
+            <div class="card-footer text-muted">
+              First Class Free
+            </div>
+          </div>
+        </div>
+        <!-- Tuesday -->
+        <div class="col-md-4 mb-5">
+          <div class="card text-center">
+            <div class="card-header bg-dark text-white">
+              <h3>Tuesday</h3>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">8:00 AM | 45 min. </h4>
+              <p class="card-text">Advanced Group Class</p>
+              <ul class="list-group">
+                <li class="list-group-item">Balance Art</li>
+                <li class="list-group-item">Fan and Sword</li>
+                <li class="list-group-item">47 Forms</li>
+                <li class="list-group-item">Push Hands</li>
+              </ul>
+            </div>
+            <div class="card-footer text-muted">
+              First Class Free
+            </div>
+          </div>
+        </div>
+        <!-- Wednesday -->
+        <div class="col-md-4 mb-5">
+          <div class="card text-center">
+            <div class="card-header bg-dark text-white">
+              <h3>Wednesday</h3>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">8:00 AM | 45 min. </h4>
+              <p class="card-text">Beginner Group Class</p>
+              <ul class="list-group">
+                <li class="list-group-item">Balance Art</li>
+                <li class="list-group-item">Fan and Sword</li>
+                <li class="list-group-item">47 Forms</li>
+              </ul>
+              <br>
+              <h4 class="card-title">8:45 AM | 30 min.</h4>
+              <p class="card-text">Private Lesson</p>
+              <ul class="list-group">
+                <li class="list-group-item">Personalized Lessons</li>
+                <li class="list-group-item">1-on-1 Instruction</li>
+              </ul>
+            </div>
+            <div class="card-footer text-muted">
+              First Class Free
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row my-4">
+        <!-- Thursday -->
+        <div class="col-md-4 mb-5">
+          <div class="card text-center">
+            <div class="card-header bg-dark text-white">
+              <h3>Thursday</h3>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">8:00 AM | 1 hr. </h4>
+              <p class="card-text">Advanced Group Class</p>
+              <ul class="list-group">
+                <li class="list-group-item">Balance Art</li>
+                <li class="list-group-item">Fan and Sword</li>
+                <li class="list-group-item">47 Forms</li>
+                <li class="list-group-item">Push Hands</li>
+              </ul>
+            </div>
+            <div class="card-footer text-muted">
+              First Class Free
+            </div>
+          </div>
+        </div>
+        <!-- Friday -->
+        <div class="col-md-4 mb-5">
+          <div class="card text-center">
+            <div class="card-header bg-dark text-white">
+              <h3>Friday</h3>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">8:00 AM | 45 min. </h4>
+              <p class="card-text">Advanced Group Class</p>
+              <ul class="list-group">
+                <li class="list-group-item">Balance Art</li>
+                <li class="list-group-item">Fan and Sword</li>
+                <li class="list-group-item">47 Forms</li>
+                <li class="list-group-item">Push Hands</li>
+              </ul>
+            </div>
             <br>
-            <p class="time">8:45am - 9:15am</p>
-            <p class="title">Private Lesson</p>
-            <p class="details">Personal Instruction</p>
-          </td>
-          <!-- Thursday -->
-          <td>
-            <p class="time">8:00am - 8:45am</p>
-            <p class="title">Advanced II</p>
-            <p class="details">Balance Art, Fan Style Sword Style, 47 Forms, Push Hands</p>
-          </td>
-          <!-- Friday -->
-          <td>
-            <p class="time">8:00am - 8:45am</p>
-            <p class="title">Advanced I</p>
-            <p class="details">Balance Art, Fan Style Sword Style, 47 Forms, Push Hands</p>
+            <div class="card-body">
+              <h4 class="card-title">8:45 AM | 45 min. </h4>
+              <p class="card-text">Intermediate Group Class</p>
+              <ul class="list-group">
+                <li class="list-group-item">Balance Art</li>
+                <li class="list-group-item">Fan and Sword</li>
+              </ul>
+            </div>
+            <div class="card-footer text-muted">
+              First Class Free
+            </div>
+          </div>
+        </div>
+        <!-- Saturday -->
+        <div class="col-md-4 mb-5">
+          <div class="card text-center">
+            <div class="card-header bg-dark text-white">
+              <h3>Saturday</h3>
+            </div>
+            <div class="card-body">
+              <h4 class="card-title">8:15 AM | 45 min. </h4>
+              <p class="card-text">Beginner Group Class</p>
+              <ul class="list-group">
+                <li class="list-group-item">Balance Art</li>
+                <li class="list-group-item">Fan and Sword</li>
+                <li class="list-group-item">47 Forms</li>
+              </ul>
+            </div>
             <br>
-            <p class="time">8:45am - 9:15am</p>
-            <p class="title">Intermediate</p>
-            <p class="details">Balance Art, Fan Style</p>
-          </td>
-          <!-- Saturday -->
-          <td>
-            <p class="time">8:15am - 9:00am</p>
-            <p class="title">Beginner</p>
-            <p class="details">Balance Art, Fan Style, Sword Style, or 47 Forms</p>
-            <br>
-            <p class="time">9:00am - 10:00am</p>
-            <p class="title">Advanced II</p>
-            <p class="details">Balance Art, Fan Style Sword Style, 47 Forms, Push Hands</p>
-        </td>
-        </tr>
-      </table>
+            <div class="card-body">
+              <h4 class="card-title">9:00 AM | 1 hr. </h4>
+              <p class="card-text">Advanced Group Class</p>
+              <ul class="list-group">
+                <li class="list-group-item">Balance Art</li>
+                <li class="list-group-item">Fan and Sword</li>
+                <li class="list-group-item">47 Forms</li>
+                <li class="list-group-item">Push Hands</li>
+              </ul>
+            </div>
+            <div class="card-footer text-muted">
+              First Class Free
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <footer class="footer bg-secondary">
+  <!-- Home Heading Section -->
+  <section id="home-heading-3" class="p-5">
+    <div class="dark-overlay">
+      <div class="row">
+        <div class="col">
+          <div class="container pt-5">
+            <h1>Are Your Ready To Get Started?</h1>
+            <p class="d-none d-md-block">No Commitment, First Class is Free</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-5">
+    <h2 class="text-center">Pricing</h2>
+    <div class="contents text-center">
+      <div class="row my-4">
+        <div class="col-md-4">
+          <h5>Group Lesson (45 min.)</h5>
+          <h3>$10</h3>
+        </div>
+        <div class="col-md-4">
+          <h5>Group Lesson (1 hr.)</h5>
+          <h3>$12</h3>
+        </div>
+        <div class="col-md-4">
+          <h5>Private Lessons</h5>
+          <h3>$25</h3>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
     <p>Copyright &copy; 2020 - TaijiUSA</p>
+    <p><i class="fas fa-phone mb-2"></i>&nbsp (909)-556-2569 </p>
   </footer>
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+  </script>
 </body>
+
 </html>
